@@ -5891,7 +5891,7 @@ a.text-dark:focus, a.text-dark:hover {
   height: 1px;
   background: rgba(0, 55, 103, 0.4); }
 
-.dark-hr {
+.light-hr {
   height: 1px;
   background: #e1e1e1; }
 
@@ -5919,6 +5919,9 @@ a.text-dark:focus, a.text-dark:hover {
 .nav-tabs {
   display: flex;
   justify-content: space-between; }
+  @media (min-width: 1010px) {
+    .nav-tabs {
+      justify-content: flex-start; } }
   .nav-tabs .nav-link {
     padding: 1rem .5rem;
     color: #fff;

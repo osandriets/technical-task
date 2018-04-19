@@ -15,7 +15,7 @@
   height: 1px;
   background: rgba(#003767, .4);
 }
-.dark-hr{
+.light-hr{
   height: 1px;
   background: $hr-border-color;
 }
@@ -54,6 +54,9 @@
 .nav-tabs {
   display: flex;
   justify-content: space-between;
+  @include media-breakpoint-up(lg){
+    justify-content: flex-start;
+  }
   .nav-link{
     padding: 1rem .5rem;
     color: $white;
