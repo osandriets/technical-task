@@ -1,0 +1,23 @@
+//@font-face { font-family: 'DecimaNovaProLt';  src: local('DecimaNovaProLt'), url('https://nomail.com.ua/files/woff/be5a3e1f88d26565d26115e9a10af1f0.woff') format('woff'); }
+@font-face { font-family: 'DecimaPro-Bold';  src: local('DecimaPro-Bold'), url('https://nomail.com.ua/files/woff/90060c5657480c2ca3ae2419eb807a22.woff') format('woff'); }
+
+
+
+@font-face {
+  font-family: 'DecimaNovaProLt';
+  src: url('/webpackboot-master/public/fonts/DecimaNovaProLt.woff2') format('woff2'),
+  url('/webpackboot-master/public/fonts/DecimaNovaProLt.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'DecimaNovaPro-Bold';
+  src: url('/webpackboot-master/public/fonts/DecimaPro-Bold.woff2') format('woff2'),
+  url('/webpackboot-master/public/fonts/DecimaPro-Bold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css?family=PT+Serif');
