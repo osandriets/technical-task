@@ -381,7 +381,7 @@ hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 1px solid rgba(0, 0, 0, 0.1); }
+  border-top: 1px solid #e1e1e1; }
 
 small,
 .small {
@@ -5876,6 +5876,9 @@ a.text-dark:focus, a.text-dark:hover {
 .invisible {
   visibility: hidden !important; }
 
+.yyy * {
+  outline: 1px solid red; }
+
 @media (max-width: 1009px) {
   .del-sm-gutters, .we-do__block_img {
     margin-left: -15px;
@@ -5887,6 +5890,10 @@ a.text-dark:focus, a.text-dark:hover {
 .dark-hr {
   height: 1px;
   background: rgba(0, 55, 103, 0.4); }
+
+.dark-hr {
+  height: 1px;
+  background: #e1e1e1; }
 
 @media (min-width: 1010px) {
   .navbar-expand-lg .navbar-nav .nav-link {
@@ -5909,18 +5916,25 @@ a.text-dark:focus, a.text-dark:hover {
   margin-bottom: 60px;
   font-size: 48px; }
 
-.nav-tabs .nav-link {
-  color: #fff;
-  font-size: 14px;
-  text-transform: uppercase;
-  font-family: "DecimaNovaPro-Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  border-bottom: 4px solid transparent; }
-  .nav-tabs .nav-link:hover, .nav-tabs .nav-link.active {
-    color: #00abff;
-    border-bottom: 4px solid #00abff; }
+.nav-tabs {
+  display: flex;
+  justify-content: space-between; }
+  .nav-tabs .nav-link {
+    padding: 1rem .5rem;
+    color: #fff;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-family: "DecimaNovaPro-Bold", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    border-bottom: 4px solid transparent; }
+    .nav-tabs .nav-link:hover, .nav-tabs .nav-link.active {
+      color: #00abff;
+      border-bottom: 4px solid #00abff; }
+    @media (min-width: 1010px) {
+      .nav-tabs .nav-link {
+        padding: 1rem 1.6rem; } }
 
 .we-do__hr {
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #e1e1e1;
   margin-bottom: 40px;
   position: relative; }
   .we-do__hr:after {
@@ -5932,7 +5946,7 @@ a.text-dark:focus, a.text-dark:hover {
     height: 2rem;
     border-width: 1px;
     border-style: solid;
-    border-color: #fff rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) #fff;
+    border-color: #fff #e1e1e1 #e1e1e1 #fff;
     background: white;
     transform: rotate(45deg); }
   @media (min-width: 1010px) {

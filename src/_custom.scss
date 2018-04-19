@@ -1,5 +1,5 @@
 .yyy *{
-  // outline: 1px solid red;
+  outline: 1px solid red;
 }
 @include media-breakpoint-down(md){
   .del-sm-gutters{
@@ -15,8 +15,13 @@
   height: 1px;
   background: rgba(#003767, .4);
 }
+.dark-hr{
+  height: 1px;
+  background: $hr-border-color;
+}
 
 //header
+
 @include media-breakpoint-up(lg) {
   .navbar-expand-lg .navbar-nav .nav-link {
     padding: .5rem 1.65rem;
@@ -47,7 +52,10 @@
 
 //
 .nav-tabs {
+  display: flex;
+  justify-content: space-between;
   .nav-link{
+    padding: 1rem .5rem;
     color: $white;
     font-size: 14px;
     text-transform: uppercase;
@@ -57,6 +65,10 @@
     &:hover, &.active{
       color: map-get($theme-colors, "primary");
       border-bottom: 4px solid map-get($theme-colors, "primary");
+    }
+
+    @include media-breakpoint-up(lg){
+      padding: 1rem 1.6rem;
     }
   }
 }
